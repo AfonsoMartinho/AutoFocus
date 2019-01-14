@@ -1,0 +1,6 @@
+{
+    "env":{
+        "MONGO_ATLAS_PW":"Djanum69",
+        "JWT_KEY":"AutoFocusJWT"
+    }
+}
