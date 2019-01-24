@@ -9,7 +9,7 @@ const checkAuth = require('../middleware/check-auth');
 const ActivitieController = require('../controllers/activities');
 
 //GET Activities
-router.get('/', checkAuth, ActivitieController.activities_get_all);
+router.get('/',  ActivitieController.activities_get_all);
 
 //POST activity
 router.post("/", checkAuth, ActivitieController.activities_create_activity);

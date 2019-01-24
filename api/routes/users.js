@@ -40,14 +40,11 @@ const upload = multer({
 
 
 
-
+//GET all users
 router.get('/', UserController.users_get_all);
-
-
 
 //GET Specific User by ID
 router.get('/:userId', UserController.users_get_user);
-
 
 //DELETE Specific User by IDs
 router.delete('/:userId', checkAuth, UserController.users_delete_user);

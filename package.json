@@ -2,7 +2,7 @@
   "name": "autofocus",
   "version": "1.0.0",
   "description": "An API that allows the managment of your life!",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -14,15 +14,22 @@
   "author": "amDevlops",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "bcrypt": "^3.0.2",
     "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
     "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.3.11",
     "morgan": "^1.9.1",
     "multer": "^1.4.1"
   },
   "devDependencies": {
+    "curl": "^0.1.4",
+    "jquery": "^3.3.1",
+    "jsdom": "^13.1.0",
     "nodemon": "^1.18.6"
   }
 }
