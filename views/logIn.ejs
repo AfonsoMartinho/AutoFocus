@@ -1,34 +1,48 @@
 <h1>LogIn</h1>
 <div class="container">
     <div class="row">
-		<div class="span12">
-			<form class="form-horizontal" action='' method="POST">
-			  <fieldset>
-			    <div id="legend">
-			      <legend class="">Login</legend>
-			    </div>
-			    <div class="control-group">
-			      <!-- Username -->
-			      <label class="control-label"  for="username">Username</label>
-			      <div class="controls">
-			        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-			      </div>
-			    </div>
-			    <div class="control-group">
-			      <!-- Password-->
-			      <label class="control-label" for="password">Password</label>
-			      <div class="controls">
-			        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-			      </div>
-			    </div>
-			    <div class="control-group">
-			      <!-- Button -->
-			      <div class="controls">
-			        <button class="btn btn-success">Login</button>
-			      </div>
-			    </div>
-			  </fieldset>
-			</form>
-		</div>
-	</div>
+        <div class="span12">
+            <form class="form-horizontal" action='http://localhost:3000/users/signup' method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <div id="legend">
+                        <legend class="">LogIn</legend>
+                    </div>
+                    <div class="control-group">
+                        <!-- Name -->
+                        <label class="control-label" for="name">Name</label>
+                        <div class="controls">
+                            <input type="text" id="name" name="name" placeholder="" class="input-xlarge">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- EMAIL -->
+                        <label class="control-label" for="email">Email</label>
+                        <div class="controls">
+                            <input type="email" id="email" name="email" placeholder="" class="input-xlarge">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- EMAIL -->
+                        <label class="control-label" for="userImage">Image</label>
+                        <div class="controls">
+                            <input type="file" id="userImage" name="userImage" placeholder="" class="input-xlarge">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- Password-->
+                        <label class="control-label" for="password">Password</label>
+                        <div class="controls">
+                            <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- Button -->
+                        <div class="controls">
+                            <button class="btn btn-success">Login</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
 </div>

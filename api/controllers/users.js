@@ -65,7 +65,7 @@ exports.users_create_user =  (req, res, next) => {
                             name: req.body.name,
                             email: req.body.email,
                             password: hash,
-                            userImage: app.Root + 'uploads/' + req.file.filename
+                            userImage: app.Root + 'uploads/' +  req.file.filename 
                         });
                         user
                             .save()
@@ -73,7 +73,7 @@ exports.users_create_user =  (req, res, next) => {
                                 console.log(result);
                                 res.status(201).json({
                                     message: "User Created Successfully",
-                                    createdActivity: {
+                                    createdUser: {
                                         _id: result.id,
                                         name: result.name,
                                         email: result.email,
